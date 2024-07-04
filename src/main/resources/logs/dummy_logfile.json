@@ -1,0 +1,58 @@
+[
+    {
+        "timestamp": "2024-06-25T09:55:10.123Z",
+        "label": "INFO",
+        "info": "Application startup",
+        "message": "Starting MySpringBootApp on PROD-SERVER-001 with PID 5678",
+        "service": "com.example.MySpringBootApp",
+        "method_name": "main"
+    },
+    {
+        "timestamp": "2024-06-25T10:00:11.456Z",
+        "label": "DEBUG",
+        "info": "Cache miss",
+        "message": "Cache miss for key 'user_123'",
+        "service": "com.example.service.CacheService",
+        "method_name": "getUserData"
+    },
+    {
+        "timestamp": "2024-06-25T10:00:12.789Z",
+        "label": "INFO",
+        "info": "Data fetch",
+        "message": "User data fetched successfully for userId=123",
+        "service": "com.example.controller.UserController",
+        "method_name": "getUserData"
+    },
+    {
+        "timestamp": "2024-06-25T10:15:30.111Z",
+        "label": "WARN",
+        "info": "Page not found",
+        "message": "No mapping found for HTTP request with URI [/nonexistent]",
+        "service": "org.springframework.web.servlet.PageNotFound",
+        "method_name": "handleNoMapping"
+    },
+    {
+        "timestamp": "2024-06-25T10:15:31.222Z",
+        "label": "WARN",
+        "info": "Unauthorized access",
+        "message": "Unauthorized access attempt detected from IP 192.168.1.100",
+        "service": "com.example.security.SecurityService",
+        "method_name": "checkAccess"
+    },
+    {
+        "timestamp": "2024-06-25T11:00:00.333Z",
+        "label": "ERROR",
+        "info": "Email failure",
+        "message": "Failed to send email to user@example.com",
+        "service": "com.example.service.EmailService",
+        "method_name": "sendEmail"
+    },
+    {
+        "timestamp": "2024-06-25T23:55:00.444Z",
+        "label": "INFO",
+        "info": "Application shutdown",
+        "message": "Preparing to shut down MySpringBootApp",
+        "service": "com.example.MySpringBootApp",
+        "method_name": "shutdown"
+    }
+]
